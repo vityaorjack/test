@@ -18,8 +18,12 @@ public class Boss{
         System.out.println("slots "+boss.slots);
         //закидаем данные из колекцыи тойс
         for(int i = 0; i<boss.slots.size(); i++){
-        	boss.aInt=boss.slots.get(i);
-        	boss.aInt=boss.toys;
+        	//boss.aInt=boss.slots.get(i);
+        	//boss.aInt=boss.toys;
+        	
+        	//boss.slots.get(i).removeAll(c)
+        	
+        	
         }
         System.out.println("slots0 "+boss.slots);
         //изменяем тойс
