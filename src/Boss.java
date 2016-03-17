@@ -35,13 +35,14 @@ class Player{
 }
 
 class Save{
-	ArrayList<ArrayList> slots=new ArrayList<ArrayList>();
+	ArrayList<ArrayList<Player>> slots=new ArrayList<>();;
 	Player player;
 	
 	Save(){
 		for(int i = 0; i<5; i++)
             slots.add(new ArrayList<Player>());        
 	}
+	
 	
 	void save(ArrayList players,int slot){
 		      	
@@ -53,7 +54,7 @@ class Save{
         for(int s = 0; s<slots.size(); s++){
         	System.out.println(" ");
         	 for(int p = 0; p<slots.get(s).size(); p++){
-        		 player=(Player) slots.get(s).get(p);
+        		 player=slots.get(s).get(p);
         		 System.out.print("slots"+s+"."+p+"="+player.lvl+" ");
         	 }
         }
