@@ -4,7 +4,7 @@ public class Boss{
 	
         ArrayList<ArrayList> slots=new ArrayList<ArrayList>();
         ArrayList<Player> players=new ArrayList<Player>();        
-        static Player lvl;
+        static Player player;
        
     public static void main(String[] args){
     	
@@ -34,8 +34,8 @@ public class Boss{
         //тестим
         System.out.println("slots1 "+boss.slots);
         for(int i = 0; i<5; i++){
-        	lvl=(Player) boss.slots.get(3).get(i);
-        	System.out.print("slots3"+i+"="+lvl.lvl+" ");
+        	player=(Player) boss.slots.get(3).get(i);
+        	System.out.print("slots3"+i+"="+player.lvl+" ");
         }
         System.out.println(" ");
         //изменяем плеерс 1	
@@ -48,8 +48,8 @@ public class Boss{
         
     	System.out.println("slots1 "+boss.slots);
         for(int i = 0; i<boss.slots.size(); i++){
-        	lvl=(Player) boss.slots.get(i).get(0);
-        	System.out.print("slots.get()"+i+"="+lvl.lvl+" ");
+        	player=(Player) boss.slots.get(i).get(0);
+        	System.out.print("slots.get()"+i+"="+player.lvl+" ");
         }
         
       //изменяем плеерс 2	
@@ -68,8 +68,8 @@ public class Boss{
         for(int s = 0; s<boss.slots.size(); s++){
         	System.out.println(" ");
         	 for(int p = 0; p<boss.slots.get(s).size(); p++){
-        		 lvl=(Player) boss.slots.get(s).get(p);
-        		 System.out.print("slots"+s+"."+p+"="+lvl.lvl+" ");
+        		 player=(Player) boss.slots.get(s).get(p);
+        		 System.out.print("slots"+s+"."+p+"="+player.lvl+" ");
         	 }
         }
         
